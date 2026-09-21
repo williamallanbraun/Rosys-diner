@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Rosy’s Diner | Escanaba, Michigan</title>
+  <meta name="description" content="Rosy’s Diner in downtown Escanaba, Michigan. Breakfast and lunch served Thursday through Tuesday, 6 AM–1 PM. Closed Wednesday.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8102e'/%3E%3Cpath d='M17 45c4-17 11-27 21-27 7 0 11 4 11 10 0 8-8 12-18 10l-4 10' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Rosy's Diner home">
+      <span>Rosy’s</span>
+      <small>Diner</small>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+      <a class="facebook-link" href="https://www.facebook.com/share/1Df8XUtFU5/" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-photo" role="img" aria-label="The red and white storefront of Rosy's Diner in downtown Escanaba"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Downtown Escanaba, Michigan</p>
+        <h1 id="hero-title">Good food.<br><em>Good morning.</em></h1>
+        <p class="intro">A cozy hometown diner serving breakfast and lunch with friendly faces, hot coffee, and the kind of meals that start your day right.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://www.google.com/maps/dir/?api=1&destination=1313+Ludington+Street+Escanaba+MI+49829" target="_blank" rel="noopener">Get Directions</a>
+          <a class="text-link" href="#hours">See today’s hours <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hours-section" id="hours" aria-labelledby="hours-title">
+      <div class="hours-heading">
+        <p class="eyebrow">Come hungry</p>
+        <h2 id="hours-title">Open early.<br>Serving until 1.</h2>
+        <p>Breakfast and lunch, six days a week.</p>
+      </div>
+      <div class="hours-card">
+        <div class="hours-row"><span>Sunday</span><strong>6 AM–1 PM</strong></div>
+        <div class="hours-row"><span>Monday</span><strong>6 AM–1 PM</strong></div>
+        <div class="hours-row"><span>Tuesday</span><strong>6 AM–1 PM</strong></div>
+        <div class="hours-row closed"><span>Wednesday</span><strong>Closed</strong></div>
+        <div class="hours-row"><span>Thursday</span><strong>6 AM–1 PM</strong></div>
+        <div class="hours-row"><span>Friday</span><strong>6 AM–1 PM</strong></div>
+        <div class="hours-row"><span>Saturday</span><strong>6 AM–1 PM</strong></div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-title">
+      <figure class="interior-photo">
+        <img src="rosys-diner-interior.jpg" alt="The open kitchen and counter inside Rosy's Diner" loading="lazy">
+      </figure>
+      <div class="story-copy">
+        <p class="eyebrow">A classic hometown diner</p>
+        <h2 id="story-title">Pull up a chair.</h2>
+        <p>Rosy’s is the kind of place where breakfast is hot, coffee keeps coming, and you’re welcomed like a regular—even on your first visit.</p>
+        <div class="rose-rule" aria-hidden="true"><span>✦</span></div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit" aria-labelledby="visit-title">
+      <div class="visit-details">
+        <p class="eyebrow">Find us downtown</p>
+        <h2 id="visit-title">Visit Rosy’s</h2>
+        <address>1313 Ludington Street<br>Escanaba, MI 49829</address>
+        <p class="phone">(906) 786-1983</p>
+        <div class="visit-actions">
+          <a class="button light" href="https://www.google.com/maps/dir/?api=1&destination=1313+Ludington+Street+Escanaba+MI+49829" target="_blank" rel="noopener">Get Directions</a>
+          <a class="social" href="https://www.facebook.com/share/1Df8XUtFU5/" target="_blank" rel="noopener">Follow on Facebook <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <img class="artwork" src="rosys-diner-artwork.jpg" alt="Wood-burned Rosy's Diner artwork featuring a smiling diner holding a sandwich" loading="lazy">
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">Rosy’s <span>Diner</span></div>
+    <p>Breakfast &amp; lunch in downtown Escanaba.</p>
+    <p class="copyright">© <span id="year"></span> Rosy’s Diner</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
